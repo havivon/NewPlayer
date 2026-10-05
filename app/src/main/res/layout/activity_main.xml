@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The root is clickable: a tap on any empty area pauses playback. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/open"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/open_files"
+        android:textSize="24sp"
+        app:cornerRadius="24dp"
+        app:icon="@drawable/media3_icon_playlist_add"
+        app:iconGravity="textStart"
+        app:iconSize="36dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadlineMedium"
+        android:textDirection="ltr" />
+
+    <TextView
+        android:id="@+id/track_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rewind_10"
+            style="@style/BigButton"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/rewind_10"
+            android:text="@string/rewind_10_short"
+            app:icon="@drawable/media3_icon_skip_back_10" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rewind_5"
+            style="@style/BigButton"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/rewind_5"
+            android:text="@string/rewind_5_short"
+            app:icon="@drawable/media3_icon_skip_back_5" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/play_pause"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/play"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="32dp"
+        app:icon="@drawable/media3_icon_play"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="120dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/previous"
+            style="@style/TrackButton"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/previous"
+            app:icon="@drawable/media3_icon_previous" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next"
+            style="@style/TrackButton"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/next"
+            app:icon="@drawable/media3_icon_next" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+</LinearLayout>

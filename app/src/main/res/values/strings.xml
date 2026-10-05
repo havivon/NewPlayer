@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">נגן</string>
+    <string name="open_files">בחירת קבצים</string>
+    <string name="no_file">לא נבחר קובץ</string>
+    <string name="play">נגן</string>
+    <string name="pause">עצור</string>
+    <string name="rewind_10">10 שניות אחורה</string>
+    <string name="rewind_5">5 שניות אחורה</string>
+    <string name="rewind_10_short">10 שנ׳</string>
+    <string name="rewind_5_short">5 שנ׳</string>
+    <string name="previous">הקובץ הקודם</string>
+    <string name="next">הקובץ הבא</string>
+    <string name="track_of">קובץ %1$d מתוך %2$d</string>
+    <string name="cannot_play">לא ניתן לנגן את הקובץ</string>
+</resources>
